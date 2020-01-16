@@ -8,7 +8,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
     line-height: 1.5;
     text-align: justify;
     font-size: 13px;
-    padding: 0 0 20px;
+    padding: 20px 0 20px;
 }
 
 .content {
@@ -76,4 +76,34 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
 .carousel-inner {
     padding: 0;
+}
+
+.customer {
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+.text-icon-slide {
+    opacity: 0.4;
+}
+
+.btn {
+    &:focus, &:active {
+       outline: 0 !important;
+       box-shadow: none;
+    }
+}
+
+.btn-start {
+    background-image: $background-image;
+    border-radius: 100px;
+    border:none;
+    color: white;
+    padding: 13px 47px 11px;
+    margin: 1% 0 20%;
+    letter-spacing: 1.33px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    &:hover {
+        color:white;
+    }
 }

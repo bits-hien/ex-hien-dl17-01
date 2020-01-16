@@ -1,4 +1,21 @@
 @media screen and (max-width: 768px) {
+  .btn:focus, .btn:active {
+    outline: 0 !important;
+    box-shadow: none; }
+
+  .btn-start {
+    background-image: linear-gradient(to right, #429321, #b4ec51);
+    border-radius: 100px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding: 13px 47px 11px;
+    margin: 1% 0 20%;
+    letter-spacing: 1.33px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+    .btn-start:hover {
+      color: white; }
+
   .header {
     text-align: center;
     padding-bottom: 15px;
@@ -49,16 +66,21 @@
     background-image: linear-gradient(to right, #429321, #b4ec51);
     color: white; }
     .content .radius .radius1 {
-      padding: 10px; }
+      padding: 15px; }
     .content .radius #demo {
       padding-bottom: 10px; }
+    .content .radius .carousel-indicators .active {
+      background-color: white; }
     .content .radius .carousel-indicators li {
       padding-top: 0;
-      width: 5px;
-      height: 5px;
-      border: solid none;
+      width: 10px;
+      height: 10px;
+      border: 1px solid white;
       border-radius: 100px;
-      background-color: none; }
+      background-color: transparent;
+      margin: 0 10px; }
+    .content .radius .slide-cus1 {
+      padding-bottom: 40px; }
   .content .icon-member {
     padding-top: 8px;
     padding-right: 10px;
@@ -74,35 +96,36 @@
     line-height: 1.6rem;
     font-size: 13px; }
   .content .slide-cus {
-    background-image: url("../img/rectanglemb.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     text-align: center;
     color: white;
     margin-top: 30px;
-    padding: 20px 10px 30px; }
-    .content .slide-cus div div {
-      padding: 8px 0; }
+    padding: 20px 10px 30px;
+    background-image: url("../img/rectanglemb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
     .content .slide-cus p {
       color: white; }
-    .content .slide-cus img {
-      padding: 20px; }
+    .content .slide-cus .carousel-indicators .active {
+      background-color: white; }
     .content .slide-cus .carousel-indicators li {
       padding-top: 0;
-      width: 5px;
-      height: 5px;
-      border: solid none;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #979797;
       border-radius: 100px;
-      background-color: none; }
-  .content .text-icon-slide {
-    text-align: justify; }
-    .content .text-icon-slide .text-icon-slide1 {
+      background-color: transparent;
+      margin: 0 10px; }
+    .content .slide-cus .slide-cus1 {
+      padding-bottom: 40px; }
+    .content .slide-cus .text-icon-slide {
+      text-align: justify; }
+    .content .slide-cus .text-icon-slide1 {
       font-size: 14px; }
-    .content .text-icon-slide .ti-quote-left {
+    .content .slide-cus .ti-quote-left {
       padding-right: 5px; }
-    .content .text-icon-slide .ti-quote-right {
-      padding-top: 40px;
+    .content .slide-cus .ti-quote-right {
+      padding-top: 70px;
       padding-left: 5px; }
 
   footer {
@@ -127,6 +150,23 @@
       footer .icon-footer i {
         padding-right: 24px; } }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .btn:focus, .btn:active {
+    outline: 0 !important;
+    box-shadow: none; }
+
+  .btn-start {
+    background-image: linear-gradient(to right, #429321, #b4ec51);
+    border-radius: 100px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding: 13px 47px 11px;
+    margin: 1% 0 20%;
+    letter-spacing: 1.33px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+    .btn-start:hover {
+      color: white; }
+
   .header {
     text-align: center;
     padding-bottom: 60px;
@@ -169,14 +209,7 @@
     background-image: linear-gradient(to right, #429321, #b4ec51);
     color: white; }
     .content .radius .radius1 {
-      padding: 20px; }
-    .content .radius .carousel-indicators li {
-      padding-top: 0px;
-      width: 5px;
-      height: 5px;
-      border: solid none;
-      border-radius: 100px;
-      background-color: none; }
+      padding: 30px 0; }
   .content .icon-member {
     padding: 8px 10px 0 0;
     color: #8bc34a; }
@@ -208,29 +241,30 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
-    .content .slide-cus div div {
-      padding: 8px 0; }
     .content .slide-cus p {
       color: white; }
-    .content .slide-cus img {
-      padding: 20px; }
+    .content .slide-cus .carousel-indicators .active {
+      background-color: white; }
     .content .slide-cus .carousel-indicators li {
       padding-top: 0;
-      width: 5px;
-      height: 5px;
-      border: solid none;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #979797;
       border-radius: 100px;
-      background-color: none; }
-  .content .text-icon-slide {
-    text-align: justify;
-    font-size: 18px; }
-    .content .text-icon-slide .ti-quote-left,
-    .content .text-icon-slide .ti-quote-right {
+      background-color: transparent;
+      margin: 0 10px; }
+    .content .slide-cus .slide-cus1 {
+      padding-bottom: 40px; }
+    .content .slide-cus .text-icon-slide {
+      text-align: justify;
+      font-size: 18px; }
+    .content .slide-cus .ti-quote-left,
+    .content .slide-cus .ti-quote-right {
       font-size: 64px; }
-    .content .text-icon-slide .text-icon-slide1 {
+    .content .slide-cus .text-icon-slide1 {
       padding-top: 40px;
       font-size: 18px; }
-    .content .text-icon-slide .ti-quote-right {
+    .content .slide-cus .ti-quote-right {
       padding-top: 100px; }
 
   footer {
@@ -248,6 +282,23 @@
       font-size: 10px;
       text-align: left; } }
 @media screen and (min-width: 992px) {
+  .btn:focus, .btn:active {
+    outline: 0 !important;
+    box-shadow: none; }
+
+  .btn-start {
+    background-image: linear-gradient(to right, #429321, #b4ec51);
+    border-radius: 100px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 13px 47px 11px;
+    margin: 1% 0 20%;
+    letter-spacing: 1.33px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+    .btn-start:hover {
+      color: white; }
+
   .header {
     text-align: center;
     padding-bottom: 230px;
@@ -308,14 +359,7 @@
     background-image: linear-gradient(to right, #429321, #b4ec51);
     color: white; }
     .content .radius .radius1 {
-      padding: 40px; }
-    .content .radius .carousel-indicators li {
-      padding-top: 0px;
-      width: 5px;
-      height: 5px;
-      border: solid none;
-      border-radius: 100px;
-      background-color: none; }
+      padding: 40px 0; }
   .content .members {
     text-align: justify;
     padding: 30px 15px 20px; }
@@ -338,54 +382,53 @@
     line-height: 1.6rem;
     font-size: 13px; }
   .content .customers {
-    text-align: justify;
-    padding: 30px 15px 20px; }
-    .content .customers div div {
-      padding-bottom: 10px; }
-    .content .customers form {
-      padding-top: 10px; }
+    padding-top: 30px; }
   .content .slide-cus {
     text-align: center;
     color: white;
     padding: 30px 0;
+    margin-bottom: 30px;
     background-image: url("../img/rectangle3.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
-    .content .slide-cus div div {
-      padding: 8px 0; }
     .content .slide-cus p {
       color: white; }
-    .content .slide-cus img {
-      padding: 20px; }
+    .content .slide-cus .carousel-indicators .active {
+      background-color: white; }
     .content .slide-cus .carousel-indicators li {
       padding-top: 0;
-      width: 5px;
-      height: 5px;
-      border: solid none;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #979797;
       border-radius: 100px;
-      background-color: none; }
+      background-color: transparent;
+      margin: 0 10px; }
+    .content .slide-cus .slide-cus1 {
+      padding-bottom: 40px; }
     .content .slide-cus .text-icon-slide {
-      margin: 0px 200px;
-      text-align: justify; }
+      text-align: justify;
+      padding: 0 14.4%; }
       .content .slide-cus .text-icon-slide .text-icon-slide1 {
         padding-top: 40px; }
       .content .slide-cus .text-icon-slide div {
-        font-size: 18px;
-        padding: 50px 5px 0px 10px; }
+        font-size: 18px; }
       .content .slide-cus .text-icon-slide i {
         font-size: 72px;
         color: white; }
       .content .slide-cus .text-icon-slide .ti-quote-right {
-        padding: 120px 0 0 30px; }
+        padding: 90px 0 0 10px; }
       .content .slide-cus .text-icon-slide .ti-quote-left {
-        padding: 0 30px 0 0; }
+        padding: 0 10px 0 0; }
     .content .slide-cus .project {
       text-align: justify;
-      padding: 30px 15px 20px; }
+      padding: 30px 15px 20px;
+      padding-top: 40px; }
       .content .slide-cus .project div div {
         padding-bottom: 10px; }
       .content .slide-cus .project form {
+        padding-top: 10px; }
+      .content .slide-cus .project .text-content {
         padding-top: 10px; }
 
   footer {
@@ -393,13 +436,11 @@
     text-align: center;
     color: white;
     font-size: 10px;
-    padding: 30px 20.5%; }
+    padding: 30px 0; }
     footer .text-footer {
       color: #8bc34a;
       font-size: 13px;
       text-align: left; }
-      footer .text-footer i {
-        padding-right: 6%; }
     footer .text-footer1 {
       font-size: 10px;
       text-align: left; } }
