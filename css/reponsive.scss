@@ -15,7 +15,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         font-size: 14px;
         color: white;
         padding: 13px 47px 11px;
-        margin: 1% 0 20%;
+        margin: 1% 0 0;
         letter-spacing: 1.33px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         &:hover {
@@ -63,6 +63,10 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             font-size: 24px;
         }
 
+        .text-title1 {
+            font-size: 14px;
+        }
+
         .text-content {
             text-align: justify;
             font-size: 13px;
@@ -90,7 +94,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
         .today {
             text-align: justify;
-            padding: 0;
+            padding: 25px 0 15px;
             box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
         }
 
@@ -148,6 +152,13 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             -webkit-line-clamp: 3;
             line-height: 1.6rem;
             font-size: 13px;
+        }
+
+        .customers {
+             .text-cus {
+                 font-size: 13px;
+                 text-align: justify;
+             }
         }
 
         .slide-cus {
@@ -242,6 +253,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .btn {
+       
         &:focus, &:active {
            outline: 0 !important;
            box-shadow: none;
@@ -255,7 +267,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         font-size: 14px;
         color: white;
         padding: 13px 47px 11px;
-        margin: 1% 0 20%;
+        margin: 1% 0 0;
         letter-spacing: 1.33px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         &:hover {
@@ -293,139 +305,149 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         }
     }
 
-    .content {
+    .icon {
+        font-size: 30px;
+        padding: 12px 8px;
+    }
 
-        .icon {
-            font-size: 30px;
-            padding: 12px 8px;
+    .text-title {
+        font-size: 36px;
+    }
+
+    .text-title1 {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+
+    @mixin today {
+        text-align: justify;
+        padding: 30px 0px 20px;
+    }
+
+    .today, 
+    .report, 
+    .members, 
+    .project { 
+        @include today;
+    }
+
+    .today, 
+    .members {
+        box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); 
+    }
+
+    .radius {
+        background-image: $background-image;
+        color: white;
+
+        .radius1 {
+            padding: 30px 0;
+        }
+    }
+
+    .today { 
+
+        .text-title1 {
+            padding: 10px 0;
+        }
+    }
+
+    .members { 
+
+        .text-title1 {
+            padding: 10px 0;
+        }
+    }
+
+    .icon-member {
+        padding: 8px 10px 0 0;
+        color:  rgb(139,195,74);
+    }
+
+    .text-member {
+        display: -webkit-box;
+        max-height: 4.8rem;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 3;
+        line-height: 1.6rem;
+        font-size: 13px;
+    }
+
+    .customers {
+        padding-top: 30px;
+
+        img {
+            padding-top: 20px;
         }
 
-        .text-title {
-            font-size: 36px;
-        }
-
-        @mixin today {
-            text-align: justify;
-            padding: 30px 0px 20px;
+        .text-cus {
+            font-size: 13px;
+            padding-top: 20px;
 
             div {
-
-                div {
-                    padding-bottom: 15px;
-                }
+                padding-bottom: 10px;
             }
         }
+    }
 
-        .today, 
-        .report, 
-        .members, 
-        .project { 
-            @include today;
+    .slide-cus {
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+        padding: 20px 15px 15px 40px;
+        background: {
+            image: url('../img/rectangletb.png');
+            size: cover;
+            repeat: no-repeat;
+            position: center center;
         }
 
-        .today, 
-        .members {
-            box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); 
-        }
-
-        .radius {
-            background-image: $background-image;
+        p {
             color: white;
-
-            .radius1 {
-                padding: 30px 0;
-            }
         }
 
-        .icon-member {
-            padding: 8px 10px 0 0;
-            color:  rgb(139,195,74);
-        }
-
-        .text-member {
-            display: -webkit-box;
-            max-height: 4.8rem;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: normal;
-            -webkit-line-clamp: 3;
-            line-height: 1.6rem;
-            font-size: 13px;
-        }
-
-        .customers {
-            padding-top: 30px;
-
-            img {
-                padding-top: 20px;
+        .carousel-indicators {
+            
+            .active {
+                background-color: white;
             }
-
-            .text-cus {
-                font-size: 13px;
-                padding-top: 20px;
-
-                div {
-                    padding-bottom: 10px;
-                }
-            }
-        }
-
-        .slide-cus {
-            text-align: center;
-            color: white;
-            margin-top: 30px;
-            padding: 20px 15px 15px 40px;
-            background: {
-                image: url('../img/rectangletb.png');
-                size: cover;
-                repeat: no-repeat;
-                position: center center;
-            }
-
-            p {
-                color: white;
-            }
-
-            .carousel-indicators {
                 
-                .active {
-                    background-color: white;
-                }
-                  
-                li {
-                    padding-top: 0;
-                    width: 10px;
-                    height: 10px;
-                    border: 1px solid rgb(151,151,151);
-                    border-radius: 100px;
-                    background-color: transparent;
-                    margin: 0 10px;
-                }
+            li {
+                padding-top: 0;
+                width: 10px;
+                height: 10px;
+                border: 1px solid rgb(151,151,151);
+                border-radius: 100px;
+                background-color: transparent;
+                margin: 0 10px;
             }
+        }
 
-            .slide-cus1 {
-                padding-bottom: 40px;
-            }
+        .slide-cus1 {
+            padding-bottom: 40px;
+        }
 
-            .text-icon-slide {
-                text-align: justify;
-                font-size: 18px;
-            }
+        .text-icon-slide {
+            text-align: justify;
+            font-size: 18px;
+        }
 
-            .ti-quote-left, 
-            .ti-quote-right {
-                font-size: 64px;
-            }
+        .ti-quote-left, 
+        .ti-quote-right {
+            font-size: 64px;
+        }
 
-            .text-icon-slide1 {
-                padding-top: 40px;
-                font-size: 18px;
-            }
+        .text-icon-slide1 {
+            padding-top: 40px;
+            font-size: 18px;
+        }
 
-            .ti-quote-right {
-                padding-top: 100px;
-            }
+        .ti-quote-right {
+            padding-top: 100px;
         }
     }
 
@@ -469,7 +491,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         font-size: 16px;
         color: white;
         padding: 13px 47px 11px;
-        margin: 1% 0 20%;
+        margin: 1% 0 10%;
         letter-spacing: 1.33px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
@@ -480,7 +502,6 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
     .header {
         text-align: center;
-        padding-bottom: 230px;
         background: {
             image: url('../img/banner.png');
             size: cover;
@@ -495,7 +516,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
         .header-content {
             font-size: 48px;
-            padding: 60px 20.5% 5px;
+            padding: 100px 20.5% 5px;
 
             div {
                 padding-bottom: 10px;
@@ -524,166 +545,177 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         }
     }
 
-    .content {
+
+    img {
+        padding-top: 25px;
+    }
+
+    .icon {
+        font-size: 30px;
+        padding: 25px 10px 0 0;
+    }
+
+    .text-title {
+        font-size: 48px;
+    }
+
+    @mixin today {
+        text-align: justify;
+        padding: 30px 15px 10px;
+    }
+
+    .today {
+        @include today;
+        text-align: justify;
+
+        .text-content {
+            padding: 10px 0 25px ;
+        }
+
+        .text-title1 {
+            padding: 10px 0;
+        }
+    }
+
+    .today, 
+    .members {
+        box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); 
+    }
+
+    .report { 
+        @include today;
+
+        .text-title1 {
+            padding: 5px 0 20px;
+        }
+
+        .text-content {
+            padding-bottom: 30px;
+        }
+    }
+
+    .radius {
+        background-image: $background-image;
+        color: white;
+
+        .radius1 {
+            padding: 40px 0;
+        }
+    }
+
+    .members {
+        @include today;
+
+        div {
+
+            div {
+                padding-bottom: 8px;
+            }
+        }
+    }
+
+    .icon-member {
+        font-size: 18px;
+        padding-top: 8px;
+        padding-right: 10px;
+        color:  rgb(139,195,74);
+    } 
+
+    .text-member {
+        display: -webkit-box;
+        max-height: 3.2rem;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 2;
+        line-height: 1.6rem;
+        font-size: 13px;
+    }
+
+    .customers {
+        padding-top: 30px;
 
         img {
-            padding-top: 25px;
+            padding-top: 50px;
+        }
+        
+        .text-title1 {
+            padding: 0 0 10px;
+        }
+    } 
+
+    .slide-cus {
+        text-align: center;
+        color: white;
+        padding: 30px 0;
+        margin-bottom: 30px;
+        background: {
+            image: url('../img/rectangle3.png');
+            size: cover;
+            repeat: no-repeat;
+            position: center center;
         }
 
-        .icon {
-            font-size: 30px;
-            padding: 25px 10px 0 0;
+        p {
+            color: white;
         }
 
-        .text-title {
-            font-size: 48px;
+        .carousel-indicators {
+            
+            .active {
+                background-color: white;
+            }
+                
+            li {
+                padding-top: 0;
+                width: 10px;
+                height: 10px;
+                border: 1px solid rgb(151,151,151);
+                border-radius: 100px;
+                background-color: transparent;
+                margin: 0 10px;
+            }
         }
 
-        @mixin today {
+        .slide-cus1 {
+            padding-bottom: 40px;
+        }
+
+        .text-icon-slide {
             text-align: justify;
-            padding: 30px 15px 20px;
+            padding: 0 14.4%;
+
+            .text-icon-slide1 {
+                padding-top: 40px;
+            }
 
             div {
-
-                div {
-                    padding-bottom: 10px;
-                }
+                font-size: 18px;
             }
 
-            form {
-                padding-top: 10px;
-            }
-        }
-
-        .today {
-            @include today;
-            text-align: justify;
-
-            #img-today {
-                width: 100%;
-            }
-
-            div {
-                padding: 5px;
-            }
-        }
-
-        .today, 
-        .members {
-            box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); 
-        }
-
-        .report { 
-            @include today;
-        }
-
-        .radius {
-            background-image: $background-image;
-            color: white;
-
-            .radius1 {
-                padding: 40px 0;
-            }
-        }
-
-        .members {
-            @include today;
-        }
-
-        .icon-member {
-            padding-top: 8px;
-            padding-right: 10px;
-            color:  rgb(139,195,74);
-        } 
-
-        .text-member {
-            display: -webkit-box;
-            max-height: 3.2rem;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: normal;
-            -webkit-line-clamp: 2;
-            line-height: 1.6rem;
-            font-size: 13px;
-        }
-
-        .customers {
-            padding-top: 30px;
-        } 
-
-        .slide-cus {
-            text-align: center;
-            color: white;
-            padding: 30px 0;
-            margin-bottom: 30px;
-            background: {
-                image: url('../img/rectangle3.png');
-                size: cover;
-                repeat: no-repeat;
-                position: center center;
-            }
-
-            p {
+            i {
+                font-size: 72px;
                 color: white;
             }
 
-            .carousel-indicators {
-                
-                .active {
-                    background-color: white;
-                }
-                  
-                li {
-                    padding-top: 0;
-                    width: 10px;
-                    height: 10px;
-                    border: 1px solid rgb(151,151,151);
-                    border-radius: 100px;
-                    background-color: transparent;
-                    margin: 0 10px;
-                }
+            .ti-quote-right {
+                padding: 90px 0 0 10px;
+
             }
 
-            .slide-cus1 {
-                padding-bottom: 40px;
+            .ti-quote-left {
+                padding: 0 10px 0 0;
             }
+        }
+    }
 
-            .text-icon-slide {
-                text-align: justify;
-                padding: 0 14.4%;
+    .project {
+        text-align: justify;
+        padding-bottom: 25px;
 
-                .text-icon-slide1 {
-                    padding-top: 40px;
-                }
-
-                div {
-                    font-size: 18px;
-                }
-
-                i {
-                    font-size: 72px;
-                    color: white;
-                }
-
-                .ti-quote-right {
-                    padding: 90px 0 0 10px;
-
-                }
-
-                .ti-quote-left {
-                    padding: 0 10px 0 0;
-                }
-            }
-
-            .project {
-                @include today;
-                padding-top: 40px;
-                
-                .text-content {
-                    padding-top: 10px;
-                }
-            }
+        .text-content {
+            padding: 15px 0;
         }
     }
 
