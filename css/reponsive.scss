@@ -63,7 +63,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             font-size: 24px;
         }
 
-        .text-title1 {
+        .text-title-top {
             font-size: 14px;
         }
 
@@ -314,7 +314,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         font-size: 36px;
     }
 
-    .text-title1 {
+    .text-title-top {
         font-size: 14px;
         padding: 10px 0;
     }
@@ -348,14 +348,14 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
     .today { 
 
-        .text-title1 {
+        .text-title-top {
             padding: 10px 0;
         }
     }
 
     .members { 
 
-        .text-title1 {
+        .text-title-top {
             padding: 10px 0;
         }
     }
@@ -572,7 +572,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             padding: 10px 0 25px ;
         }
 
-        .text-title1 {
+        .text-title-top {
             padding: 10px 0;
         }
     }
@@ -585,7 +585,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
     .report { 
         @include today;
 
-        .text-title1 {
+        .text-title-top {
             padding: 5px 0 20px;
         }
 
@@ -640,8 +640,16 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             padding-top: 50px;
         }
         
-        .text-title1 {
-            padding: 0 0 10px;
+        .text-title-top {
+            padding: 10px 0 10px;
+        }
+
+        .text-customer {
+            font-size: 13px;
+            padding: 15px 0;
+            div {
+                padding: 5px 0;
+            }
         }
     } 
 
