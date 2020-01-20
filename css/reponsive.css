@@ -41,7 +41,7 @@
   .content .text-title {
     font-size: 24px; }
   .content .text-title-top {
-    font-size: 14px; }
+    font-size: 13spx; }
   .content .text-content {
     text-align: justify;
     font-size: 13px; }
@@ -97,7 +97,7 @@
     -webkit-line-clamp: 3;
     line-height: 1.6rem;
     font-size: 13px; }
-  .content .customers .text-cus {
+  .content .text-customer {
     font-size: 13px;
     text-align: justify; }
   .content .slide-cus {
@@ -244,10 +244,10 @@
     padding-top: 30px; }
     .customers img {
       padding-top: 20px; }
-    .customers .text-cus {
+    .customers .text-customer {
       font-size: 13px;
       padding-top: 20px; }
-      .customers .text-cus div {
+      .customers .text-customer div {
         padding-bottom: 10px; }
 
   .slide-cus {
