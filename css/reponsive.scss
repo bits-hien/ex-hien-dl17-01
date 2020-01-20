@@ -15,7 +15,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         font-size: 14px;
         color: white;
         padding: 13px 47px 11px;
-        margin: 1% 0 0;
+        margin: 1% 0 5%;
         letter-spacing: 1.33px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         &:hover {
@@ -31,191 +31,200 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             repeat: no-repeat;
             position: center center;
         }
+
+        img {
+            padding: 8px 0 20px;
+        }
         
         .header-header {
-            padding: 3.2% 5.6% 3% 53%;
+            padding: 3.2% 5.6% 5% 53%;
             font-size: 12px;
+        }
+
+        .signin {
+            margin-left: 23px;
+        }
+
+        .header-icons-center {
+            padding: 0 30px;
         }
 
         .header-content {
             font-size: 18px;
-            margin: 0 16%;
-
-            div {
-                padding: 0 20px;
-            }
+            margin: 0 12%;
         }
 
         .text-header {
             font-size: 9px;
-            padding-bottom: 8px;
+            padding: 16px 0;
         }
     }
 
-    .content {
+    .icon {
+        font-size: 20px;
+        padding: 8px;
+    }
 
-        .icon {
-            font-size: 20px;
-            padding: 8px;
-        }
+    .text-title {
+        font-size: 24px;
+    }
 
-        .text-title {
-            font-size: 24px;
-        }
+    .text-title-top {
+        font-size: 13px;
+    }
 
-        .text-title-top {
-            font-size: 13px;
-        }
+    .text-content {
+        text-align: justify;
+        font-size: 13px;
+    }
+    
+    @mixin today {
+        text-align: justify;
+        padding: 20px 0;
 
-        .text-content {
-            text-align: justify;
-            font-size: 13px;
-        }
-        
-        @mixin today {
-            text-align: justify;
-            padding: 20px 0;
+        div {
 
             div {
-
-                div {
-                padding-bottom: 5px;
-                }
+            padding-bottom: 5px;
             }
         }
+    }
 
-        .today,
-        .report, 
-        .members, 
-        .customers, 
-        .project { 
-            @include today;
+    .today,
+    .report, 
+    .members, 
+    .customers, 
+    .project { 
+        @include today;
+    }
+
+    .today {
+        text-align: justify;
+        padding: 25px 0 15px;
+        box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .members {
+        box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); 
+    }
+
+    .radius {
+        background-image: $background-image;
+        color: white;
+        
+        .radius1 {
+            padding: 15px;
         }
 
-        .today {
-            text-align: justify;
-            padding: 25px 0 15px;
-            box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+        #demo {
+            padding-bottom: 10px;
         }
 
-        .members {
-            box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); 
-        }
-
-        .radius {
-            background-image: $background-image;
-            color: white;
+        .carousel-indicators {
             
-            .radius1 {
-                padding: 15px;
+            .active {
+                background-color: white;
             }
-
-            #demo {
-                padding-bottom: 10px;
-            }
-
-            .carousel-indicators {
                 
-                .active {
-                    background-color: white;
-                }
-                  
-                li {
-                    padding-top: 0;
-                    width: 10px;
-                    height: 10px;
-                    border: 1px solid white;
-                    border-radius: 100px;
-                    background-color: transparent;
-                    margin: 0 10px;
-                }
+            li {
+                padding-top: 0;
+                width: 10px;
+                height: 10px;
+                border: 1px solid white;
+                border-radius: 100px;
+                background-color: transparent;
+                margin: 0 10px;
             }
+        }
 
-            .slide-cus1 {
-                padding-bottom: 40px;
-            }
+        .slide-cus1 {
+            padding-bottom: 40px;
+        }
+    }
+    
+    .icon-member {
+        padding-top: 8px;
+        padding-right: 10px;
+        color:  rgb(139,195,74);
+    } 
+
+    .text-member {
+        display: -webkit-box;
+        max-height: 4.8rem;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 3;
+        line-height: 1.6rem;
+        font-size: 13px;
+    }
+
+    
+    .text-customer {
+            font-size: 13px;
+            text-align: justify;
+    }
+
+
+    .slide-cus {
+        text-align: center;
+        color: white;
+        padding: 20px 10px 30px;
+        background: {
+            image: url('../img/rectanglemb.jpg');
+            size: cover;
+            repeat: no-repeat;
+            position: center center;
         }
         
-        .icon-member {
-            padding-top: 8px;
-            padding-right: 10px;
-            color:  rgb(139,195,74);
-        } 
-
-        .text-member {
-            display: -webkit-box;
-            max-height: 4.8rem;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: normal;
-            -webkit-line-clamp: 3;
-            line-height: 1.6rem;
-            font-size: 13px;
+        .text-slide {
+            font-size: 24px;
+            font-weight: 25;
         }
 
-       
-        .text-customer {
-                font-size: 13px;
-                text-align: justify;
-        }
-    
-
-        .slide-cus {
-            text-align: center;
+        p {
             color: white;
-            margin-top: 30px;
-            padding: 20px 10px 30px;
-            background: {
-                image: url('../img/rectanglemb.jpg');
-                size: cover;
-                repeat: no-repeat;
-                position: center center;
-            }
+        }
+
+        .carousel-indicators {
             
-            p {
-                color: white;
+            .active {
+                background-color: white;
             }
-
-            .carousel-indicators {
                 
-                .active {
-                    background-color: white;
-                }
-                  
-                li {
-                    padding-top: 0;
-                    width: 10px;
-                    height: 10px;
-                    border: 1px solid rgb(151,151,151);
-                    border-radius: 100px;
-                    background-color: transparent;
-                    margin: 0 10px;
-                }
-            }
-
-            .slide-cus1 {
-                padding-bottom: 40px;
-            }
-
-            .text-icon-slide {
-                text-align: justify;
-            }
-
-            .text-icon-slide1 {
-                font-size: 14px;
-            }
-
-            .ti-quote-left {
-                padding-right: 5px;
-            }
-
-            .ti-quote-right {
-                padding-top: 70px;
-                padding-left: 5px;
+            li {
+                padding-top: 0;
+                width: 10px;
+                height: 10px;
+                border: 1px solid rgb(151,151,151);
+                border-radius: 100px;
+                background-color: transparent;
+                margin: 0 10px;
             }
         }
-    } 
+
+        .slide-cus1 {
+            padding-bottom: 40px;
+        }
+
+        .text-icon-slide {
+            text-align: justify;
+        }
+
+        .text-icon-slide1 {
+            font-size: 14px;
+        }
+
+        .ti-quote-left {
+            padding-right: 5px;
+        }
+
+        .ti-quote-right {
+            padding-top: 70px;
+            padding-left: 5px;
+        }
+    }
     
     footer {
         background-color: rgb(57,71,78);
@@ -231,7 +240,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             color: rgb(139,195,74);
             font-size: 12px;
             text-align: left;
-            padding-bottom: 24px;
+            padding-bottom: 15px;
         }
 
         .text-footer1 {
@@ -267,7 +276,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         font-size: 14px;
         color: white;
         padding: 13px 47px 11px;
-        margin: 1% 0 0;
+        margin: 8% 0 12.5%;
         letter-spacing: 1.33px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         &:hover {
@@ -277,31 +286,39 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
     .header {
         text-align: center;
-        padding-bottom: 60px;
         background: {
             image: url('../img/rectangle1.png');
             size: cover;
             repeat: no-repeat;
-            position: center center;
+            position: center;
         }
     
         .header-header {
-            padding: 3.2% 5.6% 3% 53%;
+            padding: 3.2% 4px 4% 53%;
             font-size: 12px;
         }
 
         .header-content {
             font-size: 24px;
-            margin: 0 16%;
-
-            div {
-                padding: 0 20px;
+            margin: 0 19%;
+            
+            img {
+                padding-bottom: 40px;
             }
         }
 
+        .signin {
+            margin-left: 23px;
+        }
+
+        .header-icons-center {
+            text-align: center;
+        }
+
+
         .text-header {
             font-size: 14px;
-            padding-bottom: 10px;
+            padding: 15px 0 0;
         }
     }
 
@@ -322,7 +339,11 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
     @mixin today {
         text-align: justify;
-        padding: 30px 0px 20px;
+        padding: 30px 0px 50px;
+
+        .start-now {
+            padding-top: 30px;
+        }
     }
 
     .today, 
@@ -406,6 +427,11 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             position: center center;
         }
 
+        .text-slide {
+            font-size: 36px;
+            font-weight: 25;
+        }
+
         p {
             color: white;
         }
@@ -455,7 +481,11 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         background-color: rgb(57,71,78);
         color: white;
         font-size: 10px; 
-        padding: 20px 5%; 
+        padding: 20px 0; 
+
+        .col-2 {
+            padding-right: 0;
+        }
 
         .text-footer {
             color: rgb(139,195,74);
@@ -491,7 +521,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         font-size: 16px;
         color: white;
         padding: 13px 47px 11px;
-        margin: 1% 0 10%;
+        margin: 2% 0 12.5%;
         letter-spacing: 1.33px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
@@ -506,34 +536,31 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             image: url('../img/banner.png');
             size: cover;
             repeat: no-repeat;
-            position: center center;
+            position: center;
+        }
+
+        img {
+            padding-bottom: 48px;
         }
         
         .header-header {
-            padding: 3.2% 20% 0 22%;
-            font-size: 12px;
+            padding: 41px 20% 0 20.5%;
+            font-size: 12pt;
         }
 
         .header-content {
             font-size: 48px;
-            padding: 100px 20.5% 5px;
-
-            div {
-                padding-bottom: 10px;
-
-                div {
-                    padding-bottom: 15px;
-                }
-            }
-        }
-
-        .icons-header1 {
-            padding-top: 18px;
+            padding: 153px 24% 53px;
         }
 
         .text-header {
             font-size: 18px;
-            padding-bottom: 30px;
+            padding:53px 0 34px;
+            letter-spacing: -0.03px;
+        }
+
+        .signin {
+            margin-left: 38px;
         }
 
         .text-icons-header {
@@ -545,23 +572,27 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         }
     }
 
-
     img {
-        padding-top: 25px;
+        padding-top: 0px;
     }
 
     .icon {
-        font-size: 30px;
-        padding: 25px 10px 0 0;
+        font-size: 36px;
+        padding: 20px 10px 0 0;
     }
 
     .text-title {
         font-size: 48px;
+        padding-bottom: 10px;
+    }
+
+    .text-title-top {
+        padding: 0 0 10px;
     }
 
     @mixin today {
         text-align: justify;
-        padding: 30px 15px 10px;
+        padding: 100px 15px 10px;
     }
 
     .today {
@@ -631,13 +662,14 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         -webkit-line-clamp: 2;
         line-height: 1.6rem;
         font-size: 13px;
+        text-align: justify;
     }
 
     .customers {
-        padding-top: 30px;
+        padding-top: 100px;
 
         img {
-            padding-top: 50px;
+            padding-top: 40px;
         }
         
         .text-title-top {
@@ -657,12 +689,16 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         text-align: center;
         color: white;
         padding: 30px 0;
-        margin-bottom: 30px;
         background: {
             image: url('../img/rectangle3.png');
             size: cover;
             repeat: no-repeat;
             position: center center;
+        }
+
+        .text-slide {
+            font-size: 48px;
+            font-weight: 25;
         }
 
         p {
@@ -720,7 +756,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
     .project {
         text-align: justify;
-        padding-bottom: 25px;
+        padding: 100px 0 25px;
 
         .text-content {
             padding: 15px 0;
