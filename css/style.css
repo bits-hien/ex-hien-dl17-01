@@ -13,13 +13,14 @@
   margin: 0 auto; }
 
 .signin {
-  padding: 10px 15px 10px 17px;
+  padding: 10px 17px 10px 15px;
   font-size: 12px;
   color: #8bc34a;
   border: 2px solid #8bc34a;
   border-radius: 30px;
-  margin-left: 23px;
-  background: transparent; }
+  background: transparent;
+  width: 82px;
+  height: 36px; }
 
 .sign-now {
   padding: 10px 27px 11px;
@@ -46,9 +47,10 @@
   width: 40px;
   border: 1.5px solid white;
   border-radius: 100px;
-  margin-top: -30px;
+  margin-top: -20px;
   background-color: #7cb342;
-  color: white; }
+  color: white;
+  font-size: 24px; }
 
 .number {
   border: 2px solid green;
@@ -60,7 +62,7 @@
   height: 5px; }
 
 .carousel-inner {
-  padding: 0; }
+  padding: 40px 0; }
 
 .customer {
   font-size: 13px;

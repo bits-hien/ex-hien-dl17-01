@@ -10,7 +10,7 @@
     font-size: 14px;
     color: white;
     padding: 13px 47px 11px;
-    margin: 1% 0 0;
+    margin: 1% 0 5%;
     letter-spacing: 1.33px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
     .btn-start:hover {
@@ -23,57 +23,68 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
+    .header img {
+      padding: 8px 0 20px; }
     .header .header-header {
-      padding: 3.2% 5.6% 3% 53%;
+      padding: 3.2% 5.6% 5% 53%;
       font-size: 12px; }
+    .header .signin {
+      margin-left: 23px; }
+    .header .header-icons-center {
+      padding: 0 30px; }
     .header .header-content {
       font-size: 18px;
-      margin: 0 16%; }
-      .header .header-content div {
-        padding: 0 20px; }
+      margin: 0 12%; }
     .header .text-header {
       font-size: 9px;
-      padding-bottom: 8px; }
+      padding: 16px 0; }
 
-  .content .icon {
+  .icon {
     font-size: 20px;
     padding: 8px; }
-  .content .text-title {
+
+  .text-title {
     font-size: 24px; }
-  .content .text-title-top {
+
+  .text-title-top {
     font-size: 13px; }
-  .content .text-content {
+
+  .text-content {
     text-align: justify;
     font-size: 13px; }
-  .content .today,
-  .content .report,
-  .content .members,
-  .content .customers,
-  .content .project {
+
+  .today,
+  .report,
+  .members,
+  .customers,
+  .project {
     text-align: justify;
     padding: 20px 0; }
-    .content .today div div,
-    .content .report div div,
-    .content .members div div,
-    .content .customers div div,
-    .content .project div div {
+    .today div div,
+    .report div div,
+    .members div div,
+    .customers div div,
+    .project div div {
       padding-bottom: 5px; }
-  .content .today {
+
+  .today {
     text-align: justify;
     padding: 25px 0 15px;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
-  .content .members {
+
+  .members {
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
-  .content .radius {
+
+  .radius {
     background-image: linear-gradient(to right, #429321, #b4ec51);
     color: white; }
-    .content .radius .radius1 {
+    .radius .radius1 {
       padding: 15px; }
-    .content .radius #demo {
+    .radius #demo {
       padding-bottom: 10px; }
-    .content .radius .carousel-indicators .active {
+    .radius .carousel-indicators .active {
       background-color: white; }
-    .content .radius .carousel-indicators li {
+    .radius .carousel-indicators li {
       padding-top: 0;
       width: 10px;
       height: 10px;
@@ -81,13 +92,15 @@
       border-radius: 100px;
       background-color: transparent;
       margin: 0 10px; }
-    .content .radius .slide-cus1 {
+    .radius .slide-cus1 {
       padding-bottom: 40px; }
-  .content .icon-member {
+
+  .icon-member {
     padding-top: 8px;
     padding-right: 10px;
     color: #8bc34a; }
-  .content .text-member {
+
+  .text-member {
     display: -webkit-box;
     max-height: 4.8rem;
     -webkit-box-orient: vertical;
@@ -97,23 +110,27 @@
     -webkit-line-clamp: 3;
     line-height: 1.6rem;
     font-size: 13px; }
-  .content .text-customer {
+
+  .text-customer {
     font-size: 13px;
     text-align: justify; }
-  .content .slide-cus {
+
+  .slide-cus {
     text-align: center;
     color: white;
-    margin-top: 30px;
     padding: 20px 10px 30px;
     background-image: url("../img/rectanglemb.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
-    .content .slide-cus p {
+    .slide-cus .text-slide {
+      font-size: 24px;
+      font-weight: 25; }
+    .slide-cus p {
       color: white; }
-    .content .slide-cus .carousel-indicators .active {
+    .slide-cus .carousel-indicators .active {
       background-color: white; }
-    .content .slide-cus .carousel-indicators li {
+    .slide-cus .carousel-indicators li {
       padding-top: 0;
       width: 10px;
       height: 10px;
@@ -121,15 +138,15 @@
       border-radius: 100px;
       background-color: transparent;
       margin: 0 10px; }
-    .content .slide-cus .slide-cus1 {
+    .slide-cus .slide-cus1 {
       padding-bottom: 40px; }
-    .content .slide-cus .text-icon-slide {
+    .slide-cus .text-icon-slide {
       text-align: justify; }
-    .content .slide-cus .text-icon-slide1 {
+    .slide-cus .text-icon-slide1 {
       font-size: 14px; }
-    .content .slide-cus .ti-quote-left {
+    .slide-cus .ti-quote-left {
       padding-right: 5px; }
-    .content .slide-cus .ti-quote-right {
+    .slide-cus .ti-quote-right {
       padding-top: 70px;
       padding-left: 5px; }
 
@@ -144,7 +161,7 @@
       color: #8bc34a;
       font-size: 12px;
       text-align: left;
-      padding-bottom: 24px; }
+      padding-bottom: 15px; }
     footer .text-footer1 {
       font-size: 10px;
       text-align: left;
@@ -166,7 +183,7 @@
     font-size: 14px;
     color: white;
     padding: 13px 47px 11px;
-    margin: 1% 0 0;
+    margin: 8% 0 12.5%;
     letter-spacing: 1.33px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
     .btn-start:hover {
@@ -174,22 +191,25 @@
 
   .header {
     text-align: center;
-    padding-bottom: 60px;
     background-image: url("../img/rectangle1.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center; }
     .header .header-header {
-      padding: 3.2% 5.6% 3% 53%;
+      padding: 3.2% 4px 4% 53%;
       font-size: 12px; }
     .header .header-content {
       font-size: 24px;
-      margin: 0 16%; }
-      .header .header-content div {
-        padding: 0 20px; }
+      margin: 0 19%; }
+      .header .header-content img {
+        padding-bottom: 40px; }
+    .header .signin {
+      margin-left: 23px; }
+    .header .header-icons-center {
+      text-align: center; }
     .header .text-header {
       font-size: 14px;
-      padding-bottom: 10px; }
+      padding: 15px 0 0; }
 
   .icon {
     font-size: 30px;
@@ -207,7 +227,12 @@
   .members,
   .project {
     text-align: justify;
-    padding: 30px 0px 20px; }
+    padding: 30px 0px 50px; }
+    .today .start-now,
+    .report .start-now,
+    .members .start-now,
+    .project .start-now {
+      padding-top: 30px; }
 
   .today,
   .members {
@@ -259,6 +284,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
+    .slide-cus .text-slide {
+      font-size: 36px;
+      font-weight: 25; }
     .slide-cus p {
       color: white; }
     .slide-cus .carousel-indicators .active {
@@ -289,7 +317,9 @@
     background-color: #39474e;
     color: white;
     font-size: 10px;
-    padding: 20px 5%; }
+    padding: 20px 0; }
+    footer .col-2 {
+      padding-right: 0; }
     footer .text-footer {
       color: #8bc34a;
       font-size: 13px;
@@ -311,7 +341,7 @@
     font-size: 16px;
     color: white;
     padding: 13px 47px 11px;
-    margin: 1% 0 10%;
+    margin: 2% 0 12.5%;
     letter-spacing: 1.33px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
     .btn-start:hover {
@@ -322,40 +352,43 @@
     background-image: url("../img/banner.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: center; }
+    .header img {
+      padding-bottom: 48px; }
     .header .header-header {
-      padding: 3.2% 20% 0 22%;
-      font-size: 12px; }
+      padding: 41px 20% 0 20.5%;
+      font-size: 12pt; }
     .header .header-content {
       font-size: 48px;
-      padding: 100px 20.5% 5px; }
-      .header .header-content div {
-        padding-bottom: 10px; }
-        .header .header-content div div {
-          padding-bottom: 15px; }
-    .header .icons-header1 {
-      padding-top: 18px; }
+      padding: 153px 24% 53px; }
     .header .text-header {
       font-size: 18px;
-      padding-bottom: 30px; }
+      padding: 53px 0 34px;
+      letter-spacing: -0.03px; }
+    .header .signin {
+      margin-left: 38px; }
     .header .text-icons-header {
       font-size: 36px; }
     .header .icons-header {
       font-size: 48px; }
 
   img {
-    padding-top: 25px; }
+    padding-top: 0px; }
 
   .icon {
-    font-size: 30px;
-    padding: 25px 10px 0 0; }
+    font-size: 36px;
+    padding: 20px 10px 0 0; }
 
   .text-title {
-    font-size: 48px; }
+    font-size: 48px;
+    padding-bottom: 10px; }
+
+  .text-title-top {
+    padding: 0 0 10px; }
 
   .today {
     text-align: justify;
-    padding: 30px 15px 10px;
+    padding: 100px 15px 10px;
     text-align: justify; }
     .today .text-content {
       padding: 10px 0 25px; }
@@ -368,7 +401,7 @@
 
   .report {
     text-align: justify;
-    padding: 30px 15px 10px; }
+    padding: 100px 15px 10px; }
     .report .text-title-top {
       padding: 5px 0 20px; }
     .report .text-content {
@@ -382,7 +415,7 @@
 
   .members {
     text-align: justify;
-    padding: 30px 15px 10px; }
+    padding: 100px 15px 10px; }
     .members div div {
       padding-bottom: 8px; }
 
@@ -401,12 +434,13 @@
     white-space: normal;
     -webkit-line-clamp: 2;
     line-height: 1.6rem;
-    font-size: 13px; }
+    font-size: 13px;
+    text-align: justify; }
 
   .customers {
-    padding-top: 30px; }
+    padding-top: 100px; }
     .customers img {
-      padding-top: 50px; }
+      padding-top: 40px; }
     .customers .text-title-top {
       padding: 10px 0 10px; }
     .customers .text-customer {
@@ -419,11 +453,13 @@
     text-align: center;
     color: white;
     padding: 30px 0;
-    margin-bottom: 30px;
     background-image: url("../img/rectangle3.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
+    .slide-cus .text-slide {
+      font-size: 48px;
+      font-weight: 25; }
     .slide-cus p {
       color: white; }
     .slide-cus .carousel-indicators .active {
@@ -455,7 +491,7 @@
 
   .project {
     text-align: justify;
-    padding-bottom: 25px; }
+    padding: 100px 0 25px; }
     .project .text-content {
       padding: 15px 0; }
 
