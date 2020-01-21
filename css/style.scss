@@ -10,6 +10,11 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
     font-size: 13px;
 }
 
+.text {
+    font-size: 12px;
+    letter-spacing: 1;
+}
+
 .content {
     margin: 0 auto;
 }
@@ -25,8 +30,6 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
     border: 2px solid rgb(139,195,74);
     border-radius: 30px;
     background: transparent;
-    width: 82px;
-    height: 36px;
 }
 
 .sign-now {
@@ -75,8 +78,19 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
     height: 5px;
 }
 
-.carousel-inner {
-    margin: 40px 0;
+.slide-cus {
+
+    .carousel-inner {
+        margin: 40px 0;
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
 }
 
 .customer {
@@ -85,5 +99,14 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 }
 
 .text-icon-slide {
-    opacity: 0.4;
+    .ti-quote-left,
+    .ti-quote-right {
+        opacity: 0.4;
+    } 
 }
+
+.btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
+    background-image: $background-image;
+}
+
+
