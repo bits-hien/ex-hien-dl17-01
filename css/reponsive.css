@@ -387,7 +387,7 @@
     font-size: 16px;
     color: white;
     padding: 13px 47px 11px;
-    margin: 2% 0 12.5%;
+    margin: 2% 0 18.5%;
     letter-spacing: 1.33px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
     .btn-start:hover {
@@ -399,6 +399,21 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
+    .header .btn:focus, .header .btn:active {
+      outline: 0 !important;
+      box-shadow: none; }
+    .header .btn-start {
+      background-image: linear-gradient(to right, #429321, #b4ec51);
+      border-radius: 100px;
+      border: none;
+      font-size: 16px;
+      color: white;
+      padding: 13px 47px 11px;
+      margin: 0 0 18.5%;
+      letter-spacing: 1.33px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+      .header .btn-start:hover {
+        color: white; }
     .header img {
       padding-bottom: 48px; }
     .header .header-header {
@@ -406,7 +421,7 @@
       font-size: 12pt; }
     .header .header-content {
       font-size: 48px;
-      padding: 153px 24% 53px; }
+      padding: 153px 17% 53px; }
     .header .text-header {
       font-size: 18px;
       padding: 53px 0 34px;
@@ -427,7 +442,7 @@
 
   .text-title {
     font-size: 48px;
-    padding-bottom: 10px; }
+    padding-bottom: 15px; }
 
   .text-title-top {
     padding: 0 0 10px; }
@@ -463,8 +478,10 @@
   .members {
     text-align: justify;
     padding: 100px 15px 10px; }
-    .members div div {
-      padding-bottom: 8px; }
+    .members .text-title-top {
+      margin: 0 0 29px; }
+    .members .text-member {
+      margin-bottom: 17px; }
 
   .icon-member {
     font-size: 18px;
@@ -521,10 +538,10 @@
       background-color: transparent;
       margin: 0 10px; }
     .slide-cus .slide-cus1 {
-      padding-bottom: 40px; }
+      padding-bottom: 10px; }
     .slide-cus .text-icon-slide {
       text-align: justify;
-      padding: 0 21%; }
+      padding: 0 26%; }
       .slide-cus .text-icon-slide .text-icon-slide1 {
         padding-top: 40px; }
       .slide-cus .text-icon-slide div {

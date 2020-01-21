@@ -572,7 +572,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         font-size: 16px;
         color: white;
         padding: 13px 47px 11px;
-        margin: 2% 0 12.5%;
+        margin: 2% 0 18.5%;
         letter-spacing: 1.33px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
@@ -590,6 +590,30 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
             position: center;
         }
 
+        .btn {
+
+            &:focus, &:active {
+               outline: 0 !important;
+               box-shadow: none;
+            }
+        }
+        
+        .btn-start {
+            background-image: $background-image;
+            border-radius: 100px;
+            border:none;
+            font-size: 16px;
+            color: white;
+            padding: 13px 47px 11px;
+            margin: 0 0 18.5%;
+            letter-spacing: 1.33px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    
+            &:hover {
+                color:white;
+            }
+        }
+
         img {
             padding-bottom: 48px;
         }
@@ -601,7 +625,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
         .header-content {
             font-size: 48px;
-            padding: 153px 24% 53px;
+            padding: 153px 17% 53px;
         }
 
         .text-header {
@@ -634,7 +658,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
     .text-title {
         font-size: 48px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
 
     .text-title-top {
@@ -689,11 +713,12 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
     .members {
         @include today;
 
-        div {
+        .text-title-top {
+            margin: 0 0 29px;
+        }
 
-            div {
-                padding-bottom: 8px;
-            }
+        .text-member {
+            margin-bottom: 17px;
         }
     }
 
@@ -777,12 +802,12 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         }
 
         .slide-cus1 {
-            padding-bottom: 40px;
+            padding-bottom: 10px;
         }
 
         .text-icon-slide {
             text-align: justify;
-            padding: 0 21%;
+            padding: 0 26%;
 
             .text-icon-slide1 {
                 padding-top: 40px;
