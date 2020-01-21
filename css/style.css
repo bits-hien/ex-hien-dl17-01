@@ -72,10 +72,9 @@
 
 .customer {
   font-size: 13px;
-  padding: 0 10px; }
+  padding: 10px; }
 
-.text-icon-slide .ti-quote-left,
-.text-icon-slide .ti-quote-right {
+.text-icon-slide {
   opacity: 0.4; }
 
 .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
