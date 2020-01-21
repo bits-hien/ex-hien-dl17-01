@@ -96,7 +96,7 @@
       padding-bottom: 40px; }
 
   .icon-member {
-    padding-top: 8px;
+    padding-top: 5px;
     padding-right: 10px;
     color: #8bc34a; }
 
@@ -233,6 +233,33 @@
     .members .start-now,
     .project .start-now {
       padding-top: 30px; }
+    .today .btn:focus, .today .btn:active,
+    .report .btn:focus,
+    .report .btn:active,
+    .members .btn:focus,
+    .members .btn:active,
+    .project .btn:focus,
+    .project .btn:active {
+      outline: 0 !important;
+      box-shadow: none; }
+    .today .btn-start,
+    .report .btn-start,
+    .members .btn-start,
+    .project .btn-start {
+      background-image: linear-gradient(to right, #429321, #b4ec51);
+      border-radius: 100px;
+      border: none;
+      font-size: 14px;
+      color: white;
+      padding: 13px 47px 11px;
+      margin: 1% 0 1%;
+      letter-spacing: 1.33px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+      .today .btn-start:hover,
+      .report .btn-start:hover,
+      .members .btn-start:hover,
+      .project .btn-start:hover {
+        color: white; }
 
   .today,
   .members {
@@ -251,7 +278,7 @@
     padding: 10px 0; }
 
   .icon-member {
-    padding: 8px 10px 0 0;
+    padding: 5px 10px 0 0;
     color: #8bc34a; }
 
   .text-member {
@@ -271,9 +298,25 @@
       padding-top: 20px; }
     .customers .text-customer {
       font-size: 13px;
-      padding-top: 20px; }
+      padding-top: 20px;
+      text-align: justify; }
       .customers .text-customer div {
         padding-bottom: 10px; }
+    .customers .btn:focus, .customers .btn:active {
+      outline: 0 !important;
+      box-shadow: none; }
+    .customers .btn-start {
+      background-image: linear-gradient(to right, #429321, #b4ec51);
+      border-radius: 100px;
+      border: none;
+      font-size: 14px;
+      color: white;
+      padding: 13px 47px 11px;
+      margin: 1% 0 1%;
+      letter-spacing: 1.33px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+      .customers .btn-start:hover {
+        color: white; }
 
   .slide-cus {
     text-align: center;
@@ -421,7 +464,7 @@
 
   .icon-member {
     font-size: 18px;
-    padding-top: 8px;
+    padding-top: 5px;
     padding-right: 10px;
     color: #8bc34a; }
 
@@ -445,7 +488,8 @@
       padding: 10px 0 10px; }
     .customers .text-customer {
       font-size: 13px;
-      padding: 15px 0; }
+      padding: 15px 0;
+      text-align: justify; }
       .customers .text-customer div {
         padding: 5px 0; }
 
@@ -476,7 +520,7 @@
       padding-bottom: 40px; }
     .slide-cus .text-icon-slide {
       text-align: justify;
-      padding: 0 14.4%; }
+      padding: 0 21%; }
       .slide-cus .text-icon-slide .text-icon-slide1 {
         padding-top: 40px; }
       .slide-cus .text-icon-slide div {
