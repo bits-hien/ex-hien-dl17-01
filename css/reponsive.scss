@@ -143,7 +143,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
     }
     
     .icon-member {
-        padding-top: 8px;
+        padding-top: 5px;
         padding-right: 10px;
         color:  rgb(139,195,74);
     } 
@@ -344,6 +344,29 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         .start-now {
             padding-top: 30px;
         }
+
+        .btn {
+       
+            &:focus, &:active {
+               outline: 0 !important;
+               box-shadow: none;
+            }
+        }
+        
+        .btn-start {
+            background-image: $background-image;
+            border-radius: 100px;
+            border:none;
+            font-size: 14px;
+            color: white;
+            padding: 13px 47px 11px;
+            margin: 1% 0 1%;
+            letter-spacing: 1.33px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            &:hover {
+                color:white;
+            }
+        }
     }
 
     .today, 
@@ -382,7 +405,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
     }
 
     .icon-member {
-        padding: 8px 10px 0 0;
+        padding: 5px 10px 0 0;
         color:  rgb(139,195,74);
     }
 
@@ -408,9 +431,33 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         .text-customer {
             font-size: 13px;
             padding-top: 20px;
+            text-align: justify;
 
             div {
                 padding-bottom: 10px;
+            }
+        }
+
+        .btn {
+       
+            &:focus, &:active {
+               outline: 0 !important;
+               box-shadow: none;
+            }
+        }
+        
+        .btn-start {
+            background-image: $background-image;
+            border-radius: 100px;
+            border:none;
+            font-size: 14px;
+            color: white;
+            padding: 13px 47px 11px;
+            margin: 1% 0 1%;
+            letter-spacing: 1.33px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            &:hover {
+                color:white;
             }
         }
     }
@@ -647,7 +694,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
     .icon-member {
         font-size: 18px;
-        padding-top: 8px;
+        padding-top: 5px;
         padding-right: 10px;
         color:  rgb(139,195,74);
     } 
@@ -679,6 +726,8 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
         .text-customer {
             font-size: 13px;
             padding: 15px 0;
+            text-align: justify;
+
             div {
                 padding: 5px 0;
             }
@@ -728,7 +777,7 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
         .text-icon-slide {
             text-align: justify;
-            padding: 0 14.4%;
+            padding: 0 21%;
 
             .text-icon-slide1 {
                 padding-top: 40px;

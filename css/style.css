@@ -13,7 +13,7 @@
   margin: 0 auto; }
 
 .signin {
-  padding: 10px 17px 10px 15px;
+  padding: 8px 19px 8px 17px;
   font-size: 12px;
   color: #8bc34a;
   border: 2px solid #8bc34a;
@@ -62,7 +62,7 @@
   height: 5px; }
 
 .carousel-inner {
-  padding: 40px 0; }
+  margin: 40px 0; }
 
 .customer {
   font-size: 13px;
