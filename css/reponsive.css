@@ -41,10 +41,11 @@
 
   .icon {
     font-size: 20px;
-    padding: 8px; }
+    padding: 13px 8px 8px; }
 
   .text-title {
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: 350; }
 
   .text-title-top {
     font-size: 13px; }
@@ -185,7 +186,7 @@
     font-size: 14px;
     color: white;
     padding: 13px 47px 11px;
-    margin: 8% 0 12.5%;
+    margin: 5% 0 19.5%;
     letter-spacing: 1.33px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
     .btn-start:hover {
@@ -200,9 +201,11 @@
     .header .header-header {
       padding: 3.2% 4px 4% 53%;
       font-size: 12px; }
+    .header .text-icons-header {
+      font-weight: 350; }
     .header .header-content {
       font-size: 24px;
-      margin: 0 19%; }
+      padding: 0 5%; }
       .header .header-content img {
         padding-bottom: 40px; }
     .header .signin {
@@ -215,10 +218,11 @@
 
   .icon {
     font-size: 30px;
-    padding: 12px 8px; }
+    padding: 18px 8px; }
 
   .text-title {
-    font-size: 36px; }
+    font-size: 36px;
+    font-weight: 350; }
 
   .text-title-top {
     font-size: 14px;
@@ -229,7 +233,7 @@
   .members,
   .project {
     text-align: justify;
-    padding: 30px 0px 50px; }
+    padding: 50px 0px 50px; }
     .today .start-now,
     .report .start-now,
     .members .start-now,
@@ -296,7 +300,7 @@
     font-size: 13px; }
 
   .customers {
-    padding-top: 30px; }
+    padding-top: 50px; }
     .customers img {
       padding-top: 20px; }
     .customers .text-customer {
@@ -429,7 +433,8 @@
     .header .signin {
       margin-left: 38px; }
     .header .text-icons-header {
-      font-size: 36px; }
+      font-size: 36px;
+      font-weight: 350; }
     .header .icons-header {
       font-size: 48px; }
 
@@ -438,11 +443,12 @@
 
   .icon {
     font-size: 36px;
-    padding: 20px 10px 0 0; }
+    padding: 25px 10px 0 0; }
 
   .text-title {
     font-size: 48px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    font-weight: 350; }
 
   .text-title-top {
     padding: 0 0 10px; }

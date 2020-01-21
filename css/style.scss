@@ -95,14 +95,11 @@ $background-image: linear-gradient(to right, rgb(66,147,33), rgb(180,236,81));
 
 .customer {
     font-size: 13px;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .text-icon-slide {
-    .ti-quote-left,
-    .ti-quote-right {
-        opacity: 0.4;
-    } 
+    opacity: 0.4;
 }
 
 .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
