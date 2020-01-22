@@ -80,4 +80,7 @@
 .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
   background-image: linear-gradient(to right, #429321, #b4ec51); }
 
+.radius {
+  letter-spacing: 1.33pt; }
+
 /*# sourceMappingURL=style.css.map */
